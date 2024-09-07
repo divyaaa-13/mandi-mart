@@ -295,6 +295,11 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "hero_8qxh3c": {
+      "type": "hero",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -306,6 +311,7 @@
     "feature_product_collection_fcn3Nn",
     "brand_collection_G4Yttb",
     "explore_VwPVRU",
-    "featured_blog_ne43LD"
+    "featured_blog_ne43LD",
+    "hero_8qxh3c"
   ]
 }

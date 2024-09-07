@@ -1,36 +1,39 @@
 <div class="hero-div">
-    <img class="hero-bg" />
+    <img class="hero-bg" src="{{ section.settings.hero_background_image | image_url }}" alt="Hero Background" />
+    
     <div class="hero-content">
         <div class="hero-ratings">
-            <img src="{{ 'hero-ratings.png' |  asset_url }}" alt="ratings" />
+            <img src="{{ 'hero-ratings.png' | asset_url }}" alt="ratings" />
         </div>
         
-        <h3 class="hero-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+        <h3 class="hero-title">{{ block.settings.hero_title }}</h3>
 
-        <p class="hero-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ad perspiciatis voluptatem temporibu</p>
+        <p class="hero-para">{{ block.settings.hero_paragraph }}</p>
 
         <div class="hero-points">
+            {% for point in block.blocks %}
             <div class="hero-point">
                 <div class="hero-point-svg">
-                    {%  render 'hero-tick' %} 
+                    {% render 'hero-tick' %}
                 </div>
-                <p class="hero-point-text">Lorem ipsum dolor sit amet consectetur</p>
+                <p class="hero-point-text">{{ point.settings.hero_point_text }}</p>
             </div>
+            {% endfor %}
         </div>
 
-        <button class="hero-button">CTA TEXT</button>
-
+        <button class="hero-button">{{ block.settings.hero_button_text }}</button>
     </div>
 </div>
 
 <style>
-    .hero-div{
+    .hero-div {
         height: 610px;
         width: 100%;
         background-color: aqua;
+        position: relative;
     }
 
-    .hero-bg{
+    .hero-bg {
         height: 610px;
         width: 100%;
         object-fit: cover;
@@ -38,7 +41,7 @@
         z-index: -3;
     }
 
-    .hero-content{
+    .hero-content {
         margin-left: 120px;
         padding-top: 50px;
         width: 594px;
@@ -50,20 +53,20 @@
         gap: 15px;
         justify-content: center;
     }
-    
-    .hero-ratings{
+
+    .hero-ratings {
         margin: 0;
         padding: 0;
         height: 32px;
         width: fit-content;
     }
-    .hero-ratings img{
+    .hero-ratings img {
         margin: 0;
         padding: 0;
         height: 32px;
     }
 
-    .hero-title{
+    .hero-title {
         margin: 0;
         padding: 0;
         font-family: "Poppins", sans-serif;
@@ -72,8 +75,8 @@
         line-height: 54px;
         color: #074542;
     }
-    
-    .hero-para{
+
+    .hero-para {
         margin: 0;
         padding: 0;
         font-family: "Poppins", sans-serif;
@@ -82,13 +85,14 @@
         line-height: 31.1px;
     }
 
-    .hero-points{
+    .hero-points {
         margin: 0;
         padding: 0;
         display: flex;
         gap: 12px;
     }
-    .hero-point{
+
+    .hero-point {
         margin: 0;
         padding: 0 15.5px;
         height: 33px;
@@ -97,8 +101,9 @@
         gap: 10px;
         background-color: rgba(255, 255, 255, 0.4);
         border-radius: 50px;
-        }
-    .hero-point-svg{
+    }
+
+    .hero-point-svg {
         margin: 0;
         padding: 0;
         width: 20px;
@@ -109,7 +114,8 @@
         align-items: center;
         justify-content: center;
     }
-    .hero-point-text{
+
+    .hero-point-text {
         margin: 0;
         padding: 0;
         font-family: "Poppins", sans-serif;
@@ -118,7 +124,7 @@
         line-height: 27px;
     }
 
-    .hero-button{
+    .hero-button {
         margin: 0;
         padding: 0;
         height: 77px;
@@ -135,19 +141,61 @@
         color: #ffffff;
         font-family: "Poppins", sans-serif;
     }
-
-
-
 </style>
 
-{%  schema  %} 
+{% schema %}
 {
-    "name": "hero",
-    "settings": [],
+    "name": "Hero Section",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "hero_background_image",
+            "label": "Background Image"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "hero_content",
+            "name": "Hero Content",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "hero_title",
+                    "label": "Hero Title",
+                    "default": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                },
+                {
+                    "type": "text",
+                    "id": "hero_paragraph",
+                    "label": "Hero Paragraph",
+                    "default": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ad perspiciatis voluptatem temporibu."
+                },
+                {
+                    "type": "text",
+                    "id": "hero_button_text",
+                    "label": "Button Text",
+                    "default": "CTA TEXT"
+                }
+            ]
+        },
+        {
+            "type": "hero_point",
+            "name": "Hero Point",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "hero_point_text",
+                    "label": "Hero Point Text",
+                    "default": "Lorem ipsum dolor sit amet consectetur"
+                }
+            ]
+        }
+    ],
     "presets": [
         {
-            "name": "hero"
+            "name": "Hero Section",
+            "category": "Custom"
         }
     ]
 }
- {% endschema %}
+{% endschema %}

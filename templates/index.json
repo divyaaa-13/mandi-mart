@@ -298,8 +298,39 @@
     },
     "hero_8qxh3c": {
       "type": "hero",
+      "blocks": {
+        "hero_title_6gDCWa": {
+          "type": "hero_title",
+          "settings": {
+            "hero_title_text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+          }
+        },
+        "hero_para_rKyhXU": {
+          "type": "hero_para",
+          "settings": {
+            "hero_para_text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ad perspiciatis voluptatem temporibu."
+          }
+        },
+        "hero_points_VM3ePC": {
+          "type": "hero_points",
+          "settings": {
+            "hero_point_text": "Lorem ipsum dolor sit amet consectetur."
+          }
+        },
+        "hero_button_cAa9hH": {
+          "type": "hero_button",
+          "settings": {
+            "hero_button_text": "Click Here"
+          }
+        }
+      },
+      "block_order": [
+        "hero_title_6gDCWa",
+        "hero_para_rKyhXU",
+        "hero_points_VM3ePC",
+        "hero_button_cAa9hH"
+      ],
       "settings": {
-        "hero_background_image": "shopify:\/\/shop_images\/yellow-winner-podium-pedestal-showcase-product-space-presentation-background-3d-rendering_copy_1.png"
       }
     }
   },

@@ -17,18 +17,15 @@
                         <p class="hero-para-text">{{ block.settings.hero_para_text | default: 'Default Hero Paragraph Text' }}</p>
                     </div>
 
-                    {% when 'hero_points' %}
-                      <div class="hero-points">
-                          {% for point in block.settings.hero_points %}
-                              <div class="hero-point">
-                                  <div class="hero-point-svg">
-                                      {% render 'hero-tick' %}
-                                  </div>
-                                  <p class="hero-point-text">{{ point | default: 'Default Hero Point Text' }}</p>
-                              </div>
-                          {% endfor %}
-                      </div>
-                  
+                {% when 'hero_points' %}
+                    <div class="hero-points">
+                        <div class="hero-point">
+                            <div class="hero-point-svg">
+                                {% render 'hero-tick' %}
+                            </div>
+                            <p class="hero-point-text">{{ block.settings.hero_point_text | default: 'Default Hero Point Text' }}</p>
+                        </div>
+                    </div>
 
                 {% when 'hero_button' %}
                     <button class="hero-button">
@@ -176,18 +173,17 @@
       ]
     },
     {
-  "type": "hero_points",
-  "name": "Hero Points",
-  "settings": [
-    {
-      "type": "text",
-      "id": "hero_point_text",
-      "label": "Point Text",
-      "default": "Lorem ipsum dolor sit amet consectetur."
-    }
-  ],
-  "limit": 5
-},
+      "type": "hero_points",
+      "name": "Hero Point",
+      "settings": [
+        {
+          "type": "text",
+          "id": "hero_point_text",
+          "label": "Point Text",
+          "default": "Lorem ipsum dolor sit amet consectetur."
+        }
+      ]
+    },
     {
       "type": "hero_button",
       "name": "Hero Button",

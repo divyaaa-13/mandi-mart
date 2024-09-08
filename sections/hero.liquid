@@ -19,14 +19,12 @@
 
                 {% when 'hero_points' %}
                     <div class="hero-points">
-                        {% for point in block.blocks %}
-                            <div class="hero-point">
-                                <div class="hero-point-svg">
-                                    {% render 'hero-tick' %}
-                                </div>
-                                <p class="hero-point-text">{{ point.settings.hero_point_text | default: 'Default Hero Point Text' }}</p>
+                        <div class="hero-point">
+                            <div class="hero-point-svg">
+                                {% render 'hero-tick' %}
                             </div>
-                        {% endfor %}
+                            <p class="hero-point-text">{{ block.settings.hero_point_text | default: 'Default Hero Point Text' }}</p>
+                        </div>
                     </div>
 
                 {% when 'hero_button' %}
@@ -37,7 +35,6 @@
         {% endfor %}
     </div>
 </div>
-
 
 <style>
     .hero-div {

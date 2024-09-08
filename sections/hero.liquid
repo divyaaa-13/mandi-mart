@@ -39,6 +39,19 @@
                 </div>
                 <p class="hero-point-text">{{ block.settings.hero_point_text | default: 'Default Hero Point Text' }}</p>
               </div>
+              <div class="hero-point">
+                <div class="hero-point"></div>
+                <div class="hero-point-svg">
+                  {% render 'hero-tick' %}
+                </div>
+                <p class="hero-point-text">{{ block.settings.hero_point_text | default: 'Default Hero Point Text' }}</p>
+              </div>
+              </div>
+                <div class="hero-point-svg">
+                  {% render 'hero-tick' %}
+                </div>
+                <p class="hero-point-text">{{ block.settings.hero_point_text | default: 'Default Hero Point Text' }}</p>
+              </div>
             </div>
           {% endif %}
 

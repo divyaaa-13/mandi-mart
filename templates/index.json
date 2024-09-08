@@ -311,24 +311,38 @@
             "hero_para_text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ad perspiciatis voluptatem temporibu."
           }
         },
-        "hero_points_Nyrdrb": {
-          "type": "hero_points",
-          "settings": {
-            "hero_point_text": "Lorem ipsum dolor sit amet consectetur."
-          }
-        },
         "hero_button_JiJUC8": {
           "type": "hero_button",
           "settings": {
             "hero_button_text": "Click Here"
+          }
+        },
+        "hero_point_hyk6Lr": {
+          "type": "hero_point",
+          "settings": {
+            "hero_point_text": "Lorem ipsum dolor sit amet consectetur."
+          }
+        },
+        "hero_point_hR6L8E": {
+          "type": "hero_point",
+          "settings": {
+            "hero_point_text": "Lorem ipsum dolor sit amet consectetur."
+          }
+        },
+        "hero_point_FHibke": {
+          "type": "hero_point",
+          "settings": {
+            "hero_point_text": "Lorem ipsum dolor sit amet consectetur."
           }
         }
       },
       "block_order": [
         "hero_title_9QE36D",
         "hero_para_WXUz79",
-        "hero_points_Nyrdrb",
-        "hero_button_JiJUC8"
+        "hero_button_JiJUC8",
+        "hero_point_hyk6Lr",
+        "hero_point_hR6L8E",
+        "hero_point_FHibke"
       ],
       "settings": {
       }

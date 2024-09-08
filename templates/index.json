@@ -15,7 +15,6 @@
         "image_cxjfMt": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/yellow-winner-podium-pedestal-showcase-product-space-presentation-background-3d-rendering_copy_3_466d1b3a-ada9-4e38-81e6-8da3eeb41cbe.png",
             "alt": "Slide",
             "carousel_heading": "Transform Your Health With Premium Supplements",
             "carousel_sub_heading": "Discover our range of curated health supplements by trusted brands!",
@@ -29,7 +28,6 @@
         "image_TtdHrm": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/medical-doctors-desk.jpg",
             "alt": "Slide",
             "carousel_heading": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             "carousel_sub_heading": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, architecto. Atque voluptate delectus deleniti labore laborum?",
@@ -45,11 +43,13 @@
         "image_cxjfMt",
         "image_TtdHrm"
       ],
+      "disabled": true,
       "settings": {
       }
     },
     "feature_product_collection_FNdwGC": {
       "type": "feature-product-collection",
+      "disabled": true,
       "settings": {
         "heading": "Feature Collection",
         "products_per_slide_mobile": 2,
@@ -67,7 +67,6 @@
         "collection_card_UWbT8T": {
           "type": "collection_card",
           "settings": {
-            "collection_img": "shopify:\/\/shop_images\/Ellipse_218.png",
             "card_background": "#3AAFA9",
             "collection": "best-sellers"
           }
@@ -75,7 +74,6 @@
         "collection_card_ceVWRm": {
           "type": "collection_card",
           "settings": {
-            "collection_img": "shopify:\/\/shop_images\/Group_1000007089.png",
             "card_background": "#3AAFA9",
             "collection": "clearance"
           }
@@ -83,7 +81,6 @@
         "collection_card_XMUYQq": {
           "type": "collection_card",
           "settings": {
-            "collection_img": "shopify:\/\/shop_images\/Ellipse_219.png",
             "card_background": "#3AAFA9",
             "collection": "new-products"
           }
@@ -91,7 +88,6 @@
         "collection_card_wnGVDx": {
           "type": "collection_card",
           "settings": {
-            "collection_img": "shopify:\/\/shop_images\/Group_1000007091_1.png",
             "card_background": "#3AAFA9",
             "collection": "our-top-brands"
           }
@@ -103,6 +99,7 @@
         "collection_card_XMUYQq",
         "collection_card_wnGVDx"
       ],
+      "disabled": true,
       "settings": {
         "heading": "",
         "section_color_scheme": "",
@@ -157,6 +154,7 @@
         "review_carousle_wi49bP",
         "review_carousle_QkRFjV"
       ],
+      "disabled": true,
       "settings": {
         "heading": "<p>Rich text<\/p>",
         "section_color_scheme": "scheme-73da2105-31f1-46f6-bd3a-71060749aa24",
@@ -194,9 +192,9 @@
         "paragraph_hkJMKB",
         "button_JGj4N3"
       ],
+      "disabled": true,
       "settings": {
         "heading": "Heading",
-        "image": "shopify:\/\/shop_images\/Yams_-_2024-05-21T174334_1.png",
         "section_color_scheme": "scheme-1",
         "color_scheme": "scheme-0ecd3135-8fa9-45f3-8af3-f71617a54edb",
         "padding_top": 36,
@@ -205,6 +203,7 @@
     },
     "feature_product_collection_fcn3Nn": {
       "type": "feature-product-collection",
+      "disabled": true,
       "settings": {
         "heading": "Best Sellers",
         "products_per_slide_mobile": 2,
@@ -222,7 +221,6 @@
         "brand_collection_6UnA84": {
           "type": "brand_collection",
           "settings": {
-            "product_image": "shopify:\/\/shop_images\/Untitleddesign_97.png",
             "collection": "neurobiologix",
             "button_text": "Explore Brand"
           }
@@ -230,7 +228,6 @@
         "brand_collection_fHDQfN": {
           "type": "brand_collection",
           "settings": {
-            "product_image": "shopify:\/\/shop_images\/image_9_1.png",
             "collection": "metabolics",
             "button_text": "Explore Brand"
           }
@@ -238,7 +235,6 @@
         "brand_collection_pUwPqY": {
           "type": "brand_collection",
           "settings": {
-            "product_image": "shopify:\/\/shop_images\/image_9_2.png",
             "collection": "probiotics",
             "button_text": "Explore Brand"
           }
@@ -246,7 +242,6 @@
         "brand_collection_zjxkBG": {
           "type": "brand_collection",
           "settings": {
-            "product_image": "shopify:\/\/shop_images\/image_9_5.png",
             "collection": "anrc-protocol",
             "button_text": "Explore Brand"
           }
@@ -258,6 +253,7 @@
         "brand_collection_pUwPqY",
         "brand_collection_zjxkBG"
       ],
+      "disabled": true,
       "settings": {
         "heading": "<p>Explore Our Top Brands<\/p>",
         "section_color_scheme": "scheme-73da2105-31f1-46f6-bd3a-71060749aa24",
@@ -268,16 +264,13 @@
     },
     "explore_VwPVRU": {
       "type": "explore",
+      "disabled": true,
       "settings": {
         "section_color_scheme": "",
         "color_scheme": "scheme-6940cb94-c89f-4f72-9e98-10b956f1bed6",
-        "image_1": "shopify:\/\/shop_images\/Screenshot_from_2024-08-13_17-17-24.png",
         "link_1": "shopify:\/\/collections\/best-sellers",
-        "image_2": "shopify:\/\/shop_images\/Group_1000007081_5.png",
         "link_2": "shopify:\/\/collections\/new-products",
-        "image_3": "shopify:\/\/shop_images\/Screenshot_from_2024-08-13_17-18-18.png",
         "link_3": "shopify:\/\/collections\/clearance",
-        "image_4": "shopify:\/\/shop_images\/Group_1000007080_1.png",
         "link_4": "shopify:\/\/collections\/digestive-enzymes",
         "h4_text": "Explore all categories",
         "h4_link": "shopify:\/\/pages\/categories-directory",
@@ -287,6 +280,7 @@
     },
     "featured_blog_ne43LD": {
       "type": "featured-blog",
+      "disabled": true,
       "settings": {
         "heading": "<strong>Latest News<\/strong>",
         "heading_size": "h1",
@@ -301,6 +295,11 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "hero_UaMyeK": {
+      "type": "hero",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -312,6 +311,7 @@
     "feature_product_collection_fcn3Nn",
     "brand_collection_G4Yttb",
     "explore_VwPVRU",
-    "featured_blog_ne43LD"
+    "featured_blog_ne43LD",
+    "hero_UaMyeK"
   ]
 }

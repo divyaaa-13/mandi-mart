@@ -17,24 +17,29 @@
                         <p class="hero-para-text">{{ block.settings.hero_para_text | default: 'Default Hero Paragraph Text' }}</p>
                     </div>
 
-                {% when 'hero_points' %}
-                    <div class="hero-points">
-                        <div class="hero-point">
-                            <div class="hero-point-svg">
-                                {% render 'hero-tick' %}
-                            </div>
-                            <p class="hero-point-text">{{ block.settings.hero_point_text | default: 'Default Hero Point Text' }}</p>
-                        </div>
-                    </div>
-
                 {% when 'hero_button' %}
                     <button class="hero-button">
                         {{ block.settings.hero_button_text | default: 'Default Button Text' }}
                     </button>
             {% endcase %}
         {% endfor %}
+
+        <!-- Static Hero Points Container -->
+        <div class="hero-points">
+            {% for block in section.blocks %}
+                {% if block.type == 'hero_point' %}
+                    <div class="hero-point">
+                        <div class="hero-point-svg">
+                            {% render 'hero-tick' %}
+                        </div>
+                        <p class="hero-point-text">{{ block.settings.hero_point_text | default: 'Default Hero Point Text' }}</p>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
     </div>
 </div>
+
 
 <style>
     .hero-div {

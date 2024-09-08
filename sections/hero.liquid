@@ -43,7 +43,7 @@
                 <button class="hero-button">
                     {{ block.settings.hero_button_text | default: 'Default Button Text' }}
                 </button>
-                </a>  
+              </a>  
             {% endif %}
         {% endfor %}
     </div>
@@ -220,7 +220,12 @@
             "id": "hero_button_text",
             "label": "Button Text",
             "default": "Click Here"
-          }
+          },
+          {
+                   "type": "url",
+                   "id": "button_link",
+                   "label": "button link"
+                }
         ]
       },
       {

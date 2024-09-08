@@ -299,55 +299,34 @@
     "hero_UaMyeK": {
       "type": "hero",
       "blocks": {
-        "hero_title_9QE36D": {
-          "type": "hero_title",
+        "banner_HDapEE": {
+          "type": "banner",
           "settings": {
-            "hero_title_text": "Transform Your Health With Premium Supplements"
+            "hero_bg_image": "shopify:\/\/shop_images\/yellow-winner-podium-pedestal-showcase-product-space-presentation-background-3d-rendering_copy_1.png",
+            "hero_bg_image_mobile": "shopify:\/\/shop_images\/yellow-winner-podium-pedestal-showcase-product-space-presentation-background-3d-rendering_copy_1_1.png",
+            "hero_title_text": "Transform Your Health With Premium Supplements",
+            "hero_para_text": "Discover our range of curated health supplements by trusted brands!",
+            "hero_point_text": "Default Hero Point Text",
+            "hero_button_text": "Default Button Text",
+            "button_link": ""
           }
         },
-        "hero_para_WXUz79": {
-          "type": "hero_para",
+        "banner_it6DzT": {
+          "type": "banner",
           "settings": {
-            "hero_para_text": "Discover our range of curated health supplements by trusted brands!"
-          }
-        },
-        "hero_point_hyk6Lr": {
-          "type": "hero_point",
-          "settings": {
-            "hero_point_text": "Wide range of brands and categories"
-          }
-        },
-        "hero_point_hR6L8E": {
-          "type": "hero_point",
-          "settings": {
-            "hero_point_text": "Premium supplements trusted by experts"
-          }
-        },
-        "hero_point_FHibke": {
-          "type": "hero_point",
-          "settings": {
-            "hero_point_text": "Best prices and fast delivery"
-          }
-        },
-        "hero_button_JiJUC8": {
-          "type": "hero_button",
-          "settings": {
-            "hero_button_text": "Click Here",
+            "hero_title_text": "Default Hero Title Text",
+            "hero_para_text": "Default Hero Paragraph Text",
+            "hero_point_text": "Default Hero Point Text",
+            "hero_button_text": "Default Button Text",
             "button_link": ""
           }
         }
       },
       "block_order": [
-        "hero_title_9QE36D",
-        "hero_para_WXUz79",
-        "hero_point_hyk6Lr",
-        "hero_point_hR6L8E",
-        "hero_point_FHibke",
-        "hero_button_JiJUC8"
+        "banner_HDapEE",
+        "banner_it6DzT"
       ],
       "settings": {
-        "hero_bg_image": "shopify:\/\/shop_images\/yellow-winner-podium-pedestal-showcase-product-space-presentation-background-3d-rendering_copy_1.png",
-        "hero_bg_image_mobile": "shopify:\/\/shop_images\/yellow-winner-podium-pedestal-showcase-product-space-presentation-background-3d-rendering_copy_1_1.png",
         "hero_color_scheme": "scheme-aeba2e45-de80-4cbc-bf08-e61e0f14bb55"
       }
     },

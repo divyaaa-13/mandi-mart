@@ -1,5 +1,10 @@
 <div class="hero-div section-{{ section.id }}">
-    <img class="hero-bg" src="{{ section.settings.hero_bg_image | img_url: 'original' }}" alt="Hero Background" />
+    <div class="banner__img-wrapper">
+        {% if section.settings.hero_bg_image != blank %}
+        {{ section.settings.hero_bg_image | image_url: width: '1600' | image_tag: sizes: sizes, widths: '200,300,400,500,600,700,800,900,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200', class: "hero-bg" }}
+        {% endif %}
+    </div>
+    
     <div class="hero-content">
         <div class="hero-ratings">
             <img src="{{ 'hero-ratings.png' | asset_url }}" alt="ratings" />
@@ -38,7 +43,7 @@
                 <button class="hero-button">
                     {{ block.settings.hero_button_text | default: 'Default Button Text' }}
                 </button>
-                </a>
+              </a>
             {% endif %}
         {% endfor %}
     </div>

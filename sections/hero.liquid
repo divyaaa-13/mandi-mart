@@ -1,60 +1,60 @@
-
-<div class="hero-div section-{{ section.id }} color-{{ section.settings.hero_color_scheme }}">
-    <div class="banner-img-wrapper">
-        {% if section.settings.hero_bg_image != blank %}
-            {{ section.settings.hero_bg_image | image_url: width: section.settings.image.width | image_tag: sizes: sizes, widths: '200,300,400,500,600,700,800,900,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200', class: "hero-bg" }}
-        {% endif %}
+<div class="hero-slider">
+  {% for block in section.blocks %}
+    {% if block.type == 'banner' %}
+      <div class="hero-div section-{{ section.id }} color-{{ section.settings.hero_color_scheme }}">
+        <div class="banner-img-wrapper">
+          {% if block.settings.hero_bg_image != blank %}
+            {{ block.settings.hero_bg_image | image_url: width: block.settings.image.width | image_tag: sizes: sizes, widths: '200,300,400,500,600,700,800,900,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200', class: "hero-bg" }}
+          {% endif %}
         </div>
-        
-      <div class="banner-img-wrapper-mobile">  
-        {% if section.settings.hero_bg_image_mobile != blank %}
-            {{ section.settings.hero_bg_image_mobile | image_url: width: section.settings.image.width | image_tag: sizes: sizes, widths: '200,300,400,500,600,700', class: "hero-bg-mobile" }}
-        {% endif %}
-    </div>
 
-    <div class="hero-content">
-        <div class="hero-ratings">
+        <div class="banner-img-wrapper-mobile">
+          {% if block.settings.hero_bg_image_mobile != blank %}
+            {{ block.settings.hero_bg_image_mobile | image_url: width: block.settings.image.width | image_tag: sizes: sizes, widths: '200,300,400,500,600,700', class: "hero-bg-mobile" }}
+          {% endif %}
+        </div>
+
+        <div class="hero-content">
+          <div class="hero-ratings">
             <img src="{{ 'hero-ratings.png' | asset_url }}" alt="ratings" />
+          </div>
+
+          {% if block.settings.hero_title_text != blank %}
+            <div class="hero-title">
+              <h3 class="hero-title-text">{{ block.settings.hero_title_text | default: 'Default Hero Title Text' }}</h3>
+            </div>
+          {% endif %}
+
+          {% if block.settings.hero_para_text != blank %}
+            <div class="hero-para">
+              <p class="hero-para-text">{{ block.settings.hero_para_text | default: 'Default Hero Paragraph Text' }}</p>
+            </div>
+          {% endif %}
+
+          {% if block.settings.hero_point_text != blank %}
+            <div class="hero-points">
+              <div class="hero-point">
+                <div class="hero-point-svg">
+                  {% render 'hero-tick' %}
+                </div>
+                <p class="hero-point-text">{{ block.settings.hero_point_text | default: 'Default Hero Point Text' }}</p>
+              </div>
+            </div>
+          {% endif %}
+
+          {% if block.settings.hero_button_text != blank %}
+            <a class="button-link" href="{{ block.settings.button_link }}">
+              <button class="hero-button">
+                {{ block.settings.hero_button_text | default: 'Default Button Text' }}
+              </button>
+            </a>
+          {% endif %}
         </div>
-
-        {% for block in section.blocks %}
-            {% case block.type %}
-                {% when 'hero_title' %}
-                    <div class="hero-title">
-                        <h3 class="hero-title-text">{{ block.settings.hero_title_text | default: 'Default Hero Title Text' }}</h3>
-                    </div>
-
-                {% when 'hero_para' %}
-                    <div class="hero-para">
-                        <p class="hero-para-text">{{ block.settings.hero_para_text | default: 'Default Hero Paragraph Text' }}</p>
-                    </div>
-            {% endcase %}
-        {% endfor %}
-
-        <div class="hero-points">
-            {% for block in section.blocks %}
-                {% if block.type == 'hero_point' %}
-                    <div class="hero-point">
-                        <div class="hero-point-svg">
-                            {% render 'hero-tick' %}
-                        </div>
-                        <p class="hero-point-text">{{ block.settings.hero_point_text | default: 'Default Hero Point Text' }}</p>
-                    </div>
-                {% endif %}
-            {% endfor %}
-        </div>
-
-        {% for block in section.blocks %}
-            {% if block.type == 'hero_button' %}
-              <a class="button-link" href="{{ block.settings.button_link }}">
-                <button class="hero-button">
-                    {{ block.settings.hero_button_text | default: 'Default Button Text' }}
-                </button>
-              </a>
-            {% endif %}
-        {% endfor %}
-    </div>
+      </div>
+    {% endif %}
+  {% endfor %}
 </div>
+
 
 
 

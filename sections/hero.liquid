@@ -31,30 +31,36 @@
             </div>
           {% endif %}
 
-          {% if block.settings.hero_point_text != blank %}
+          
             <div class="hero-points">
+              {% if block.settings.hero_point_text_1 != blank %}
               <div class="hero-point">
                 <div class="hero-point-svg">
                   {% render 'hero-tick' %}
                 </div>
                 <p class="hero-point-text">{{ block.settings.hero_point_text_1 | default: 'Default Hero Point Text' }}</p>
               </div>
+            {% endif %}
 
+            {% if block.settings.hero_point_text_2 != blank %}
               <div class="hero-point">
                 <div class="hero-point-svg">
                   {% render 'hero-tick' %}
                 </div>
                 <p class="hero-point-text">{{ block.settings.hero_point_text_2 | default: 'Default Hero Point Text' }}</p>
               </div>
+            {% endif %}
 
+            {% if block.settings.hero_point_text_3 != blank %}
               <div class="hero-point">
                 <div class="hero-point-svg">
                   {% render 'hero-tick' %}
                 </div>
                 <p class="hero-point-text">{{ block.settings.hero_point_text_3 | default: 'Default Hero Point Text' }}</p>
               </div>
+            {% endif %}
             </div>
-          {% endif %}
+          
 
           {% if block.settings.hero_button_text != blank %}
             <a class="button-link" href="{{ block.settings.button_link }}">

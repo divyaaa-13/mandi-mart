@@ -1,10 +1,14 @@
 <div class="hero-div section-{{ section.id }}">
     <div class="banner__img-wrapper">
         {% if section.settings.hero_bg_image != blank %}
-        {{ section.settings.hero_bg_image | image_url: width: section.settings.image.width | image_tag: sizes: sizes, widths: '200,300,400,500,600,700,800,900,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200', class: "hero-bg" }}
+            {{ section.settings.hero_bg_image | image_url: width: section.settings.image.width | image_tag: sizes: sizes, widths: '200,300,400,500,600,700,800,900,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200', class: "hero-bg" }}
+        {% endif %}
+
+        {% if section.settings.hero_bg_image_mobile != blank %}
+            {{ section.settings.hero_bg_image_mobile | image_url: width: section.settings.image.width | image_tag: sizes: sizes, widths: '200,300,400,500,600,700', class: "hero-bg-mobile" }}
         {% endif %}
     </div>
-    
+
     <div class="hero-content">
         <div class="hero-ratings">
             <img src="{{ 'hero-ratings.png' | asset_url }}" alt="ratings" />
@@ -48,6 +52,7 @@
         {% endfor %}
     </div>
 </div>
+
 
 
 <style>

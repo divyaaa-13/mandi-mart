@@ -187,76 +187,81 @@
 </style>
 
 {% schema %}
-{
-  "name": "Hero Section",
-  "settings": [
-    {
-      "type": "image_picker",
-      "id": "hero_bg_image",
-      "label": "Hero Background Image"
-    }
-  ],
-  "blocks": [
-    {
-      "type": "hero_title",
-      "name": "Hero Title",
-      "settings": [
-        {
-          "type": "text",
-          "id": "hero_title_text",
-          "label": "Hero Title Text",
-          "default": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
-        }
-      ]
-    },
-    {
-      "type": "hero_para",
-      "name": "Hero Paragraph",
-      "settings": [
-        {
-          "type": "textarea",
-          "id": "hero_para_text",
-          "label": "Paragraph Text",
-          "default": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ad perspiciatis voluptatem temporibu."
-        }
-      ]
-    },
-    {
-      "type": "hero_button",
-      "name": "Hero Button",
-      "settings": [
-        {
-          "type": "text",
-          "id": "hero_button_text",
-          "label": "Button Text",
-          "default": "Click Here"
-        },
-        {
-          "type": "url",
-          "id": "button_link",
-          "label": "button link"
-        }
-      ]
-    },
-    {
-      "type": "hero_point",
-      "name": "Hero Point",
-      "settings": [
-        {
-          "type": "text",
-          "id": "hero_point_text",
-          "label": "Point Text",
-          "default": "Lorem ipsum dolor sit amet consectetur."
-        }
-      ]
-    }
-  ],
-  "presets": [
-    {
-      "name": "Hero Section",
-      "category": "Custom"
-    }
-  ]
-}
-
-{% endschema %}
+  {
+    "name": "Hero Section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "hero_bg_image",
+        "label": "Hero Background Image (Desktop)"
+      },
+      {
+        "type": "image_picker",
+        "id": "hero_bg_image_mobile",
+        "label": "Hero Background Image (Mobile)"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "hero_title",
+        "name": "Hero Title",
+        "settings": [
+          {
+            "type": "text",
+            "id": "hero_title_text",
+            "label": "Hero Title Text",
+            "default": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+          }
+        ]
+      },
+      {
+        "type": "hero_para",
+        "name": "Hero Paragraph",
+        "settings": [
+          {
+            "type": "textarea",
+            "id": "hero_para_text",
+            "label": "Paragraph Text",
+            "default": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ad perspiciatis voluptatem temporibu."
+          }
+        ]
+      },
+      {
+        "type": "hero_button",
+        "name": "Hero Button",
+        "settings": [
+          {
+            "type": "text",
+            "id": "hero_button_text",
+            "label": "Button Text",
+            "default": "Click Here"
+          },
+          {
+            "type": "url",
+            "id": "button_link",
+            "label": "Button Link"
+          }
+        ]
+      },
+      {
+        "type": "hero_point",
+        "name": "Hero Point",
+        "settings": [
+          {
+            "type": "text",
+            "id": "hero_point_text",
+            "label": "Point Text",
+            "default": "Lorem ipsum dolor sit amet consectetur."
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Hero Section",
+        "category": "Custom"
+      }
+    ]
+  }
+  {% endschema %}
+  

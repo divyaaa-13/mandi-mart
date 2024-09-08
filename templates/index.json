@@ -298,6 +298,38 @@
     },
     "hero_UaMyeK": {
       "type": "hero",
+      "blocks": {
+        "hero_title_9QE36D": {
+          "type": "hero_title",
+          "settings": {
+            "hero_title_text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+          }
+        },
+        "hero_para_WXUz79": {
+          "type": "hero_para",
+          "settings": {
+            "hero_para_text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ad perspiciatis voluptatem temporibu."
+          }
+        },
+        "hero_points_Nyrdrb": {
+          "type": "hero_points",
+          "settings": {
+            "hero_point_text": "Lorem ipsum dolor sit amet consectetur."
+          }
+        },
+        "hero_button_JiJUC8": {
+          "type": "hero_button",
+          "settings": {
+            "hero_button_text": "Click Here"
+          }
+        }
+      },
+      "block_order": [
+        "hero_title_9QE36D",
+        "hero_para_WXUz79",
+        "hero_points_Nyrdrb",
+        "hero_button_JiJUC8"
+      ],
       "settings": {
       }
     }

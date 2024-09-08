@@ -345,9 +345,16 @@
         "hero_point_FHibke",
         "hero_button_JiJUC8"
       ],
+      "disabled": true,
       "settings": {
         "hero_bg_image": "shopify:\/\/shop_images\/yellow-winner-podium-pedestal-showcase-product-space-presentation-background-3d-rendering_copy_1.png",
-        "hero_bg_image_mobile": "shopify:\/\/shop_images\/yellow-winner-podium-pedestal-showcase-product-space-presentation-background-3d-rendering_copy_1_1.png"
+        "hero_bg_image_mobile": "shopify:\/\/shop_images\/yellow-winner-podium-pedestal-showcase-product-space-presentation-background-3d-rendering_copy_1_1.png",
+        "hero_color_scheme": ""
+      }
+    },
+    "comment_X4eQK4": {
+      "type": "comment",
+      "settings": {
       }
     }
   },
@@ -361,6 +368,7 @@
     "brand_collection_G4Yttb",
     "explore_VwPVRU",
     "featured_blog_ne43LD",
-    "hero_UaMyeK"
+    "hero_UaMyeK",
+    "comment_X4eQK4"
   ]
 }

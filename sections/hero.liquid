@@ -1,4 +1,5 @@
-<div class="hero-slider">
+<div class="hero-slider swiper">
+  <div class="slider-container">
   {% for block in section.blocks %}
     {% if block.type == 'banner' %}
       <div class="hero-div section-{{ section.id }} color-{{ section.settings.hero_color_scheme }}">
@@ -73,6 +74,7 @@
       </div>
     {% endif %}
   {% endfor %}
+  </div>
 </div>
 
 

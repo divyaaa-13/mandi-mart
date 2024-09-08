@@ -1,5 +1,5 @@
 
-<div class="hero-div section-{{ section.id }} color--{{ section.settings.hero_color_scheme }}">
+<div class="hero-div section-{{ section.id }} color-{{ section.settings.hero_color_scheme }}">
     <div class="banner-img-wrapper">
         {% if section.settings.hero_bg_image != blank %}
             {{ section.settings.hero_bg_image | image_url: width: section.settings.image.width | image_tag: sizes: sizes, widths: '200,300,400,500,600,700,800,900,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200', class: "hero-bg" }}

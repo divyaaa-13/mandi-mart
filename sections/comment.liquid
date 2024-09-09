@@ -3,14 +3,20 @@
         <div class="ratings">
             <img src="{{ 'hero-ratings.png' | asset_url }}" alt="ratings" />
         </div>
-        <h3>Lorem ipsum dolor sit</h3>
-        <p> Lorem ipsum dolor sit amet consectet</p>
-
+        {% if block.settings.heading != blank %}
+        <h3>{{ block.settings.heading }}</h3>
+        {% endif %}
+        
+        {% if block.settings.paragraph != blank %}
+        <p>{{ block.settings.paragraph }}</p>
+        {% endif %}
     </div>
+    
     <div class="img-div">
-        <img/>
+        {% if block.settings.image != blank %}
+        <img src="{{ block.settings.image | file_url }}" alt="block image" />
+        {% endif %}
     </div>
-
 </div>
 
 <style>
@@ -52,8 +58,6 @@
         font-weight: 600;
         line-height: 54px;
         color: #074542;
-
-    
     }
     .text-content p{
         margin: 0;
@@ -80,55 +84,67 @@
         background-color: blueviolet;
     }
 
-
-    /* MEDIA QUERRIES... */
-
-    @media(min-width : 319px) and (max-width : 700px){
-        .main-div{
+    @media(min-width: 319px) and (max-width: 700px) {
+        .main-div {
             width: 100vw;
             margin: 0;
             height: 107px;
         }
-        .img-div{
+        .img-div {
             display: none;
         }
-        .text-content{
+        .text-content {
             justify-content: flex-start;
             align-items: center;
             gap: 3px;
         }
-
-        .text-content .ratings{
-        height: 24px;
-        width: fit-content;
-    }
-    .ratings img{
-        width:fit-content;
-        height: 24px;
-    }
-        .text-content h3{
+        .text-content .ratings {
+            height: 24px;
+            width: fit-content;
+        }
+        .ratings img {
+            width: fit-content;
+            height: 24px;
+        }
+        .text-content h3 {
             font-size: 20px;
             line-height: 27px;
             text-align: center;
         }
-        .text-content p{
+        .text-content p {
             font-size: 16px;
             line-height: 24.88px;
             text-align: center;
         }
-
     }
-
 </style>
 
-{%  schema  %} 
+{% schema %}
 {
-    "name": "comment",
-    "settings": [],
+    "name": "Main Div Block",
+    "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "Lorem ipsum dolor sit"
+        },
+        {
+            "type": "textarea",
+            "id": "paragraph",
+            "label": "Paragraph",
+            "default": "Lorem ipsum dolor sit amet consectet"
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+        }
+    ],
     "presets": [
         {
-            "name": "comment"
+            "name": "Main Div Block"
         }
     ]
 }
- {% endschema %}
+{% endschema %}

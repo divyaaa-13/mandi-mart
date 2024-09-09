@@ -75,7 +75,7 @@
         height: 173px;
         background-size: cover;
         background-position: center;
-        background-color: blueviolet;
+        background-color: aqua;
     }
 
 
@@ -151,6 +151,30 @@
           "type": "image_picker",
           "id": "img_upload",
           "label": "Upload Image for img-div"
+        },
+        {
+          "type": "range",
+          "id": "margin_top",
+          "label": "Top Margin",
+          "default": 20,
+          "min": 0,
+          "max": 100,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "margin_bottom",
+          "label": "Bottom Margin",
+          "default": 20,
+          "min": 0,
+          "max": 100,
+          "unit": "px"
+        },
+        {
+          "type": "text",
+          "id": "page_width",
+          "label": "Page Width",
+          "default": "1155px"
         }
       ],
       "presets": [
@@ -160,3 +184,4 @@
       ]
     }
     {% endschema %}
+    

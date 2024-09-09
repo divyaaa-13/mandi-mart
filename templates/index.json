@@ -299,12 +299,20 @@
     },
     "comment_7aBPUp": {
       "type": "comment",
+      "disabled": true,
       "settings": {
         "h3_text": "Lorem ipsum dolor sit",
         "h3_text_color": "#074542",
         "p_text": "Lorem ipsum dolor sit amet consectet",
         "p_text_color": "#000000",
-        "img_upload": "shopify:\/\/shop_images\/Mask_group.png"
+        "img_upload": "shopify:\/\/shop_images\/Mask_group.png",
+        "margin_top": 20,
+        "margin_bottom": 20
+      }
+    },
+    "explore1_ekCD4Y": {
+      "type": "explore1",
+      "settings": {
       }
     }
   },
@@ -318,6 +326,7 @@
     "brand_collection_G4Yttb",
     "explore_VwPVRU",
     "featured_blog_ne43LD",
-    "comment_7aBPUp"
+    "comment_7aBPUp",
+    "explore1_ekCD4Y"
   ]
 }

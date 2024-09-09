@@ -213,80 +213,111 @@
 </style>
 
 {% schema %}
-    {
-        "name": "Explore Section",
-        "settings": [],
-        "blocks": [
-            {
-                "type": "big-div",
-                "name": "Big Div",
-                "settings": [
-                    {
-                        "type": "image_picker",
-                        "id": "big_img",
-                        "label": "Big Div Image"
-                    },
-                    {
-                        "type": "range",
-                        "id": "big_img_width",
-                        "label": "Big Div Image Width (px)",
-                        "default": 360,
-                        "min": 100,
-                        "max": 1000,
-                        "step": 10
-                    },
-                    {
-                        "type": "text",
-                        "id": "big_heading",
-                        "label": "Big Div Heading",
-                        "default": "AMINO ACID"
-                    },
-                    {
-                        "type": "text",
-                        "id": "big_button_text",
-                        "label": "Big Div Button Text",
-                        "default": "Explore Now"
-                    }
-                ]
-            },
-            {
-                "type": "small-div",
-                "name": "Small Div",
-                "settings": [
-                    {
-                        "type": "image_picker",
-                        "id": "small_img",
-                        "label": "Small Div Image"
-                    },
-                    {
-                        "type": "range",
-                        "id": "small_img_width",
-                        "label": "Small Div Image Width (px)",
-                        "default": 350,
-                        "min": 100,
-                        "max": 1000,
-                        "step": 10
-                    },
-                    {
-                        "type": "text",
-                        "id": "small_heading",
-                        "label": "Small Div Heading",
-                        "default": "EFA'S OIL"
-                    },
-                    {
-                        "type": "text",
-                        "id": "small_button_text",
-                        "label": "Small Div Button Text",
-                        "default": "Explore Now"
-                    }
-                ]
-            }
-        ],
-        "presets": [
-            {
-                "name": "Explore Section",
-                "category": "Sections"
-            }
-        ]
-    }
+   {
+    "name": "Explore Section",
+    "settings": [
+        {
+            "type": "text",
+            "id": "h3_text",
+            "label": "Heading 3 Text",
+            "default": "Explore Our Categories"
+        },
+        {
+            "type": "color",
+            "id": "h3_color",
+            "label": "Heading 3 Color",
+            "default": "#074542"
+        },
+        {
+            "type": "text",
+            "id": "h5_text",
+            "label": "Heading 5 Text",
+            "default": "Explore all categories"
+        },
+        {
+            "type": "color",
+            "id": "h5_color",
+            "label": "Heading 5 Color",
+            "default": "#074542"
+        },
+        {
+            "type": "url",
+            "id": "h5_link",
+            "label": "Heading 5 Link",
+        }
+    ],
+    "blocks": [
+        {
+            "type": "big-div",
+            "name": "Big Div",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "big_img",
+                    "label": "Big Div Image"
+                },
+                {
+                    "type": "range",
+                    "id": "big_img_width",
+                    "label": "Big Div Image Width (px)",
+                    "default": 360,
+                    "min": 100,
+                    "max": 1000,
+                    "step": 10
+                },
+                {
+                    "type": "text",
+                    "id": "big_heading",
+                    "label": "Big Div Heading",
+                    "default": "AMINO ACID"
+                },
+                {
+                    "type": "text",
+                    "id": "big_button_text",
+                    "label": "Big Div Button Text",
+                    "default": "Explore Now"
+                }
+            ]
+        },
+        {
+            "type": "small-div",
+            "name": "Small Div",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "small_img",
+                    "label": "Small Div Image"
+                },
+                {
+                    "type": "range",
+                    "id": "small_img_width",
+                    "label": "Small Div Image Width (px)",
+                    "default": 350,
+                    "min": 100,
+                    "max": 1000,
+                    "step": 10
+                },
+                {
+                    "type": "text",
+                    "id": "small_heading",
+                    "label": "Small Div Heading",
+                    "default": "EFA'S OIL"
+                },
+                {
+                    "type": "text",
+                    "id": "small_button_text",
+                    "label": "Small Div Button Text",
+                    "default": "Explore Now"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Explore Section",
+            "category": "Sections"
+        }
+    ]
+}
+
     {% endschema %}

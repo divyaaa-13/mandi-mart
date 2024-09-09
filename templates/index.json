@@ -330,8 +330,14 @@
         "banner_c3zCTx",
         "banner_wiDj36"
       ],
+      "disabled": true,
       "settings": {
         "hero_color_scheme": ""
+      }
+    },
+    "comment_EBDrTw": {
+      "type": "comment",
+      "settings": {
       }
     }
   },
@@ -345,6 +351,7 @@
     "brand_collection_G4Yttb",
     "explore_VwPVRU",
     "featured_blog_ne43LD",
-    "hero_R6mMDL"
+    "hero_R6mMDL",
+    "comment_EBDrTw"
   ]
 }

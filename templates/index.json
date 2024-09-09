@@ -338,6 +338,9 @@
     "comment_EBDrTw": {
       "type": "comment",
       "settings": {
+        "heading": "Lorem ipsum dolor sit",
+        "paragraph": "Lorem ipsum dolor sit amet consectet",
+        "image": "shopify:\/\/shop_images\/Mask_group.png"
       }
     }
   },

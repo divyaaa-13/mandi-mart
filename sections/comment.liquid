@@ -124,14 +124,44 @@
 
 </style>
 
-{%  schema  %} 
-{
-    "name": "comment",
-    "settings": [],
-    "presets": [
+{% schema %}
+    {
+      "name": "Text and Image Block",
+      "settings": [
         {
-            "name": "comment"
+          "type": "text",
+          "id": "h3_text",
+          "label": "Heading Text",
+          "default": "Lorem ipsum dolor sit"
+        },
+        {
+          "type": "color",
+          "id": "h3_text_color",
+          "label": "Heading Text Color",
+          "default": "#074542"
+        },
+        {
+          "type": "text",
+          "id": "p_text",
+          "label": "Paragraph Text",
+          "default": "Lorem ipsum dolor sit amet consectet"
+        },
+        {
+          "type": "color",
+          "id": "p_text_color",
+          "label": "Paragraph Text Color",
+          "default": "#000000"
+        },
+        {
+          "type": "image_picker",
+          "id": "img_upload",
+          "label": "Upload Image for img-div"
         }
-    ]
-}
- {% endschema %}
+      ],
+      "presets": [
+        {
+          "name": "Text and Image Block"
+        }
+      ]
+    }
+    {% endschema %}

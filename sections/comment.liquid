@@ -1,7 +1,7 @@
 <div class="main-div">
     <div class="text-content">
         <div class="ratings">
-
+            <img src="{{ 'hero-ratings.png' | asset_url }}" alt="ratings" />
         </div>
         <h3>Lorem ipsum dolor sit amet consectetur</h3>
         <p> Lorem ipsum dolor sit amet consectet</p>
@@ -26,9 +26,13 @@
         flex-direction: column;
     }
     .text-content .ratings{
-        width: 430.6px;
+        width: fit-content;
         height: 32px;
         object-fit: cover;
+    }
+    .ratings img{
+        width: 430.6px;
+        height: 32px;
     }
     .text-content h3{
         font-size: 40px;

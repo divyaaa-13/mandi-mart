@@ -300,6 +300,11 @@
     "comment_7aBPUp": {
       "type": "comment",
       "settings": {
+        "h3_text": "Lorem ipsum dolor sit",
+        "h3_text_color": "#074542",
+        "p_text": "Lorem ipsum dolor sit amet consectet",
+        "p_text_color": "#000000",
+        "img_upload": "shopify:\/\/shop_images\/Mask_group.png"
       }
     }
   },

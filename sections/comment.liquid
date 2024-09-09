@@ -7,12 +7,10 @@
         <p style="color: {{ settings.p_text_color | default: '#000000' }}">{{ settings.p_text | default: 'Lorem ipsum dolor sit amet consectet' }}</p>
     </div>
     <div class="img-div">
-        {% if settings.img_upload %}
-          <img src="{{ settings.img_upload | file_url }}" alt="Dynamic Image"/>
-        {% else %}
-          <img src="{{ 'placeholder-image.png' | asset_url }}" alt="Placeholder Image"/>
+        {% if block.settings.img_upload != blank %}
+          {{ block.settings.img_upload| image_url: width: block.settings.image.width | image_tag: sizes: sizes, widths: '200,300,400,500,600,700', class: "hero-bg-mobile" }}
         {% endif %}
-    </div>
+      </div>
 </div>
 
 

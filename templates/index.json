@@ -312,6 +312,42 @@
     },
     "explore1_ekCD4Y": {
       "type": "explore1",
+      "blocks": {
+        "big_div_cbM4PW": {
+          "type": "big-div",
+          "settings": {
+            "big_heading": "AMINO ACID",
+            "big_button_text": "Explore Now"
+          }
+        },
+        "small_div_nbKM7P": {
+          "type": "small-div",
+          "settings": {
+            "small_heading": "EFA'S OIL",
+            "small_button_text": "Explore Now"
+          }
+        },
+        "small_div_FyPHqj": {
+          "type": "small-div",
+          "settings": {
+            "small_heading": "EFA'S OIL",
+            "small_button_text": "Explore Now"
+          }
+        },
+        "big_div_yF7mwx": {
+          "type": "big-div",
+          "settings": {
+            "big_heading": "AMINO ACID",
+            "big_button_text": "Explore Now"
+          }
+        }
+      },
+      "block_order": [
+        "big_div_cbM4PW",
+        "small_div_nbKM7P",
+        "small_div_FyPHqj",
+        "big_div_yF7mwx"
+      ],
       "settings": {
       }
     },

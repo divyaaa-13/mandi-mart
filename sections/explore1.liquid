@@ -5,7 +5,7 @@
         {% for block in section.blocks %}
             {% if block.type == 'big-div' %}
                 <div class="big-div">
-                    <div class="big-div-img" style="width: {{ block.settings.big_img_width }}px;">
+                    <div class="big-div-img">
                         <img src="{{ block.settings.big_img | image_url }}" alt="Big Div Image" />
                     </div>
                     <div class="big-div-content">
@@ -19,7 +19,7 @@
                         <h4>{{ block.settings.small_heading }}</h4>
                         <button class="big-div-btn explore-btn">{{ block.settings.small_button_text }}</button>
                     </div>
-                    <div class="small-div-img" style="width: {{ block.settings.small_img_width }}px;">
+                    <div class="small-div-img">
                         <img src="{{ block.settings.small_img | image_url }}" alt="Small Div Image" />
                     </div>
                 </div>

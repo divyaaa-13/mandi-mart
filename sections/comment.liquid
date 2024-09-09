@@ -1,28 +1,17 @@
-<div class="main-div" style="background-color: {{ settings.background_color }};">
-  <div class="text-content">
-    <div class="ratings">
-      {% if settings.ratings_image %}
-        <img src="{{ settings.ratings_image | asset_url }}" alt="ratings" />
-      {% else %}
-        <p>No ratings image uploaded.</p>
-      {% endif %}
-    </div>
-    <h3 style="color: {{ settings.heading_color }};">
-      {{ settings.heading_text | default: 'Default Heading' }}
-    </h3>
-    <p style="color: {{ settings.paragraph_color }};">
-      {{ settings.paragraph_text | default: 'Default paragraph text' }}
-    </p>
-  </div>
-  <div class="img-div">
-    {% if settings.image %}
-      <img src="{{ settings.image | asset_url }}" alt="Uploaded image" />
-    {% else %}
-      <p>No image uploaded.</p>
-    {% endif %}
-  </div>
-</div>
+<div class="main-div">
+    <div class="text-content">
+        <div class="ratings">
+            <img src="{{ 'hero-ratings.png' | asset_url }}" alt="ratings" />
+        </div>
+        <h3>Lorem ipsum dolor sit</h3>
+        <p> Lorem ipsum dolor sit amet consectet</p>
 
+    </div>
+    <div class="img-div">
+        <img/>
+    </div>
+
+</div>
 
 <style>
     .main-div{
@@ -132,57 +121,14 @@
 
 </style>
 
-{% schema %}
-    {
-      "name": "Custom Section",
-      "settings": [
+{%  schema  %} 
+{
+    "name": "comment",
+    "settings": [],
+    "presets": [
         {
-          "type": "color",
-          "id": "background_color",
-          "label": "Background Color",
-          "default": "#ffffff"
-        },
-        {
-          "type": "image_picker",
-          "id": "ratings_image",
-          "label": "Ratings Image"
-        },
-        {
-          "type": "text",
-          "id": "heading_text",
-          "label": "Heading Text",
-          "default": "Lorem ipsum dolor sit"
-        },
-        {
-          "type": "color",
-          "id": "heading_color",
-          "label": "Heading Color",
-          "default": "#074542"
-        },
-        {
-          "type": "text",
-          "id": "paragraph_text",
-          "label": "Paragraph Text",
-          "default": "Lorem ipsum dolor sit amet consectett"
-        },
-        {
-          "type": "color",
-          "id": "paragraph_color",
-          "label": "Paragraph Color",
-          "default": "#000000"
-        },
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image"
+            "name": "comment"
         }
-      ],
-      "presets": [
-        {
-          "name": "Default",
-          "category": "Custom"
-        }
-      ]
-    }
-    {% endschema %}
-    
+    ]
+}
+ {% endschema %}

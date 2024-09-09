@@ -3,14 +3,12 @@
         <div class="ratings">
             <img src="{{ 'hero-ratings.png' | asset_url }}" alt="ratings" />
         </div>
-        <h3>Lorem ipsum dolor sit</h3>
-        <p> Lorem ipsum dolor sit amet consectet</p>
-
+        <h3 style="color: {{ settings.h3_text_color }}">{{ settings.h3_text }}</h3>
+        <p style="color: {{ settings.p_text_color }}">{{ settings.p_text }}</p>
     </div>
     <div class="img-div">
-        <img/>
+        <img src="{{ settings.img_upload | file_url }}" alt="Image"/>
     </div>
-
 </div>
 
 <style>

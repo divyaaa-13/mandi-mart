@@ -327,6 +327,28 @@
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+  var swiper = new Swiper('.mySwiper', {
+    loop: true, // Loop through slides
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    autoplay: {
+      delay: 5000, // Auto-slide every 5 seconds
+      disableOnInteraction: false,
+    },
+  });
+});
+
+</script>
+
 {% schema %}
   {
     "name": "Hero Section",

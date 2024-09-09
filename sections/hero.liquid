@@ -253,13 +253,6 @@
    /* MEDIA QUERIES... */
 
    @media(min-width : 319px) and (max-width : 700px){
-    .swiper-wrapper {
-    width: 100vw; /* Make sure the swiper wrapper takes full viewport width */
-  }
-
-  .swiper-slide {
-    width: 100vw; /* Set each slide to full width */
-  }
     .hero-div{
       height: 695px;
       width: 100vw;
@@ -358,9 +351,10 @@
 
 
 <script>
- document.addEventListener('DOMContentLoaded', function () {
+  document.addEventListener('DOMContentLoaded', function () {
   var swiper = new Swiper('.mySwiper', {
-    loop: true, // Loop through slides
+    loop: true, 
+    slidesPerView: 1,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
@@ -368,27 +362,13 @@
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
-    }, 
+    },
     autoplay: {
       delay: 5000, // Auto-slide every 5 seconds
       disableOnInteraction: false,
     },
-    slidesPerView: 1, // Ensure only one slide is visible on mobile
-    spaceBetween: 0, // Remove any spacing between slides to avoid overlap
-    breakpoints: {
-      300: {
-        slidesPerView: 1,
-      },
-      700: {
-        slidesPerView: 1, // Mobile - only 1 slide visible
-      },
-      1200: {
-        slidesPerView: 1, // Desktop - adjust as needed
-      },
-    },
   });
 });
-
 
 </script>
 

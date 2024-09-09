@@ -44,6 +44,7 @@
         "image_cxjfMt",
         "image_TtdHrm"
       ],
+      "disabled": true,
       "settings": {
       }
     },
@@ -253,6 +254,7 @@
         "brand_collection_pUwPqY",
         "brand_collection_zjxkBG"
       ],
+      "disabled": true,
       "settings": {
         "heading": "<p>Explore Our Top Brands<\/p>",
         "section_color_scheme": "scheme-73da2105-31f1-46f6-bd3a-71060749aa24",

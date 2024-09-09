@@ -316,6 +316,7 @@
         "big_div_cbM4PW": {
           "type": "big-div",
           "settings": {
+            "big_img": "shopify:\/\/shop_images\/image_20.png",
             "big_heading": "AMINO ACID",
             "big_button_text": "Explore Now"
           }

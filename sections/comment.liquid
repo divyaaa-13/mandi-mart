@@ -3,20 +3,18 @@
         <div class="ratings">
             <img src="{{ 'hero-ratings.png' | asset_url }}" alt="ratings" />
         </div>
-        <h3 style="color: {{ settings.h3_text_color | default: '#074542' }}">{{ settings.h3_text | default: 'Lorem ipsum dolor sit' }}</h3>
-        <p style="color: {{ settings.p_text_color | default: '#000000' }}">{{ settings.p_text | default: 'Lorem ipsum dolor sit amet consectet' }}</p>
+        <h3>Lorem ipsum dolor sit</h3>
+        <p> Lorem ipsum dolor sit amet consectet</p>
+
     </div>
     <div class="img-div">
-        {% if settings.img_upload %}
-          <img src="{{ settings.img_upload | file_url }}" alt="Dynamic Image"/>
-        {% else %}
-          <img src="{{ 'placeholder-image.png' | asset_url }}" alt="Placeholder Image"/>
-        {% endif %}
+        <img/>
     </div>
+
 </div>
 
 <style>
-    .main-div {
+    .main-div{
         margin: auto;
         padding: 0;
         height: 173px;
@@ -24,7 +22,7 @@
         display: flex;
         background-color: aqua;
     }
-    .text-content {
+    .text-content{
         margin: 0;
         padding: 0;
         width: 761.99px;
@@ -34,123 +32,103 @@
         justify-content: center;
         gap: 7px;
     }
-    .text-content .ratings {
+    .text-content .ratings{
         margin: 0;
         padding: 0;
         width: fit-content;
         height: 32px;
         object-fit: cover;
     }
-    .ratings img {
+    .ratings img{
         margin: 0;
         padding: 0;
         width: 430.6px;
         height: 32px;
     }
-    .text-content h3 {
+    .text-content h3{
         margin: 0;
         padding: 0;
         font-size: 40px;
         font-weight: 600;
         line-height: 54px;
+        color: #074542;
+
+    
     }
-    .text-content p {
+    .text-content p{
         margin: 0;
         padding: 0;
         font-size: 20px;
         font-weight: 400;
         line-height: 31.1px;
     }
-    .img-div {
+
+    .img-div{
         margin: 0;
         padding: 0;
         width: 393.03px;
         height: 173px;
         object-fit: cover;
     }
-    .img-div img {
+    .img-div img{
         margin: 0;
         padding: 0;
         width: 393.03px;
         height: 173px;
         background-size: cover;
         background-position: center;
+        background-color: blueviolet;
     }
 
-    /* MEDIA QUERIES */
-    @media (min-width: 319px) and (max-width: 700px) {
-        .main-div {
+
+    /* MEDIA QUERRIES... */
+
+    @media(min-width : 319px) and (max-width : 700px){
+        .main-div{
             width: 100vw;
             margin: 0;
             height: 107px;
         }
-        .img-div {
+        .img-div{
             display: none;
         }
-        .text-content {
+        .text-content{
             justify-content: flex-start;
             align-items: center;
             gap: 3px;
         }
-        .text-content .ratings {
-            height: 24px;
-            width: fit-content;
-        }
-        .ratings img {
-            width: fit-content;
-            height: 24px;
-        }
-        .text-content h3 {
+
+        .text-content .ratings{
+        height: 24px;
+        width: fit-content;
+    }
+    .ratings img{
+        width:fit-content;
+        height: 24px;
+    }
+        .text-content h3{
             font-size: 20px;
             line-height: 27px;
             text-align: center;
         }
-        .text-content p {
+        .text-content p{
             font-size: 16px;
             line-height: 24.88px;
             text-align: center;
         }
+
     }
+
 </style>
 
-{% schema %}
+{%  schema  %} 
 {
-  "name": "Text and Image Block",
-  "settings": [
-    {
-      "type": "text",
-      "id": "h3_text",
-      "label": "Heading Text",
-      "default": "Lorem ipsum dolor sit"
-    },
-    {
-      "type": "color",
-      "id": "h3_text_color",
-      "label": "Heading Text Color",
-      "default": "#074542"
-    },
-    {
-      "type": "text",
-      "id": "p_text",
-      "label": "Paragraph Text",
-      "default": "Lorem ipsum dolor sit amet consectet"
-    },
-    {
-      "type": "color",
-      "id": "p_text_color",
-      "label": "Paragraph Text Color",
-      "default": "#000000"
-    },
-    {
-      "type": "image_picker",
-      "id": "img_upload",
-      "label": "Upload Image for img-div"
-    }
-  ],
-  "presets": [
-    {
-      "name": "Text and Image Block"
-    }
-  ]
+    "name": "comment",
+    "settings": [],
+    "presets": [
+        {
+            "name": "comment"
+        }
+    ]
 }
-{% endschema %}
+ {% endschema %}

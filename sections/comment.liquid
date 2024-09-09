@@ -7,11 +7,7 @@
         <p style="color: {{ settings.p_text_color | default: '#000000' }}">{{ settings.p_text | default: 'Lorem ipsum dolor sit amet consectet' }}</p>
     </div>
     <div class="img-div">
-        {% if settings.img_upload %}
-          <img src="{{ settings.img_upload | file_url }}" alt="Dynamic Image"/>
-        {% else %}
-          <img src="{{ 'placeholder-image.png' | asset_url }}" alt="Placeholder Image"/>
-        {% endif %}
+        <img  src="{{section.settings.img_upload |  img_url: 'master'}}" alt="section image">
     </div>
 </div>
 

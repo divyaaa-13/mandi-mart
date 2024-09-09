@@ -1,4 +1,4 @@
-<div class="hero-slider swiper">
+<div class="hero-slider swiper mySwiper">
   <div class="slider-wrapper">
   {% for block in section.blocks %}
     {% if block.type == 'banner' %}
@@ -71,6 +71,8 @@
             </a>
           {% endif %}
         </div>
+        <div class="swiper-button-next"></div>
+       <div class="swiper-button-prev"></div>
       </div>
     {% endif %}
   {% endfor %}
@@ -322,6 +324,15 @@
 </style>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
 
 {% schema %}
   {

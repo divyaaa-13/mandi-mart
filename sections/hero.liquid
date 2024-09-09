@@ -101,8 +101,7 @@
         width: 100vw;
         position: relative;
         background-color: transparent;
-        /* padding-left: 10px;
-        padding-right: ; */
+        padding-left: 10px;
     }
 
     .banner-img-wrapper{
@@ -368,6 +367,7 @@
   var swiper = new Swiper('.mySwiper', {
   loop: true, 
   slidesPerView: 1,
+  spaceBetween: 20, // Adds space between slides
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -376,10 +376,10 @@
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  // autoplay: {
-  //   delay: 5000, 
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 5000, // Auto-slide every 5 seconds
+    disableOnInteraction: false,
+  },
   breakpoints: {
     320: {
       slidesPerView: 1, // For smaller screens, show one slide at a time

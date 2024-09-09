@@ -2,30 +2,33 @@
     <h3>Explore Our Categories</h3>
 
     <div class="explore-container">
-        <div class="big-div">
-            <div class="big-div-img">
-                <img />
-            </div>
-            <div class="big-div-content">
-                <h4>AMINO ACID</h4>
-                <button class="big-div-btn explore-btn">Explore Now</button>
-            </div>
-        </div>
-
-        <div class="small-div">
-                <div class="small-div-content">
-                    <h4>EFA'S OIL</h4>
-                    <button class="big-div-btn explore-btn">Explore Now</button>
+        {% for block in section.blocks %}
+            {% if block.type == 'big-div' %}
+                <div class="big-div">
+                    <div class="big-div-img">
+                        <img src="{{ block.settings.big_img | image_url }}" alt="Big Div Image" />
+                    </div>
+                    <div class="big-div-content">
+                        <h4>{{ block.settings.big_heading }}</h4>
+                        <button class="big-div-btn explore-btn">{{ block.settings.big_button_text }}</button>
+                    </div>
                 </div>
-                <div class="small-div-img"></div>
-                <img />
-               </div>
-        </div>
+            {% elsif block.type == 'small-div' %}
+                <div class="small-div">
+                    <div class="small-div-content">
+                        <h4>{{ block.settings.small_heading }}</h4>
+                        <button class="big-div-btn explore-btn">{{ block.settings.small_button_text }}</button>
+                    </div>
+                    <div class="small-div-img">
+                        <img src="{{ block.settings.small_img | image_url }}" alt="Small Div Image" />
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
     </div>
 
-    <h5>explore all categories</h5>
+    <h5>Explore all categories</h5>
 </div>
-
 
 <style>
     .explore-page{
@@ -47,7 +50,6 @@
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
-
     }
 
     .big-div{
@@ -109,7 +111,6 @@
         line-height: 37.32px;
     }
 
-
     .small-div{
         margin: 0;
         padding: 0;
@@ -134,7 +135,6 @@
         justify-content: flex-end;
         align-items: center;
         gap: 6px;
-        
     }
     .small-div-content h4{
         margin: 0;
@@ -168,7 +168,7 @@
         z-index: 10;
         object-fit: cover;
         overflow: hidden;
-        background-color:black;
+        background-color: transparent;
         display: block !important;
     }
     .small-div-img img{
@@ -188,19 +188,65 @@
         line-height: 37.32px;
         color: #074542;
     }
-
-
 </style>
 
-
-{%  schema  %} 
+{% schema %}
 {
-    "name": "explore1",
+    "name": "Explore Section",
     "settings": [],
+    "blocks": [
+        {
+            "type": "big-div",
+            "name": "Big Div",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "big_img",
+                    "label": "Big Div Image"
+                },
+                {
+                    "type": "text",
+                    "id": "big_heading",
+                    "label": "Big Div Heading",
+                    "default": "AMINO ACID"
+                },
+                {
+                    "type": "text",
+                    "id": "big_button_text",
+                    "label": "Big Div Button Text",
+                    "default": "Explore Now"
+                }
+            ]
+        },
+        {
+            "type": "small-div",
+            "name": "Small Div",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "small_img",
+                    "label": "Small Div Image"
+                },
+                {
+                    "type": "text",
+                    "id": "small_heading",
+                    "label": "Small Div Heading",
+                    "default": "EFA'S OIL"
+                },
+                {
+                    "type": "text",
+                    "id": "small_button_text",
+                    "label": "Small Div Button Text",
+                    "default": "Explore Now"
+                }
+            ]
+        }
+    ],
     "presets": [
         {
-            "name": "explore1"
+            "name": "Explore Section",
+            "category": "Sections"
         }
     ]
 }
- {% endschema %} 
+{% endschema %}

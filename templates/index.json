@@ -314,6 +314,44 @@
       "type": "explore1",
       "settings": {
       }
+    },
+    "hero_EdNC9b": {
+      "type": "hero",
+      "blocks": {
+        "banner_N9NAFk": {
+          "type": "banner",
+          "settings": {
+            "hero_bg_image": "shopify:\/\/shop_images\/Rectangle_6583.png",
+            "hero_bg_image_mobile": "shopify:\/\/shop_images\/yellow-winner-podium-pedestal-showcase-product-space-presentation-background-3d-rendering_copy_1_1.png",
+            "hero_title_text": "Transform Your Health With Premium Supplements",
+            "hero_para_text": "Discover our range of curated health supplements by trusted brands!",
+            "hero_point_text_1": "Wide range of brands and categories",
+            "hero_point_text_2": "Premium supplements trusted by experts",
+            "hero_point_text_3": "Best prices and fast delivery",
+            "hero_button_text": "Default Button Text",
+            "button_link": ""
+          }
+        },
+        "banner_JKUNUY": {
+          "type": "banner",
+          "settings": {
+            "hero_title_text": "Transform Your Health With Premium Supplements",
+            "hero_para_text": "Discover our range of curated health supplements by trusted brands!",
+            "hero_point_text_1": "Wide range of brands and categories",
+            "hero_point_text_2": "Premium supplements trusted by experts",
+            "hero_point_text_3": "Best prices and fast delivery",
+            "hero_button_text": "Default Button Text",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "banner_N9NAFk",
+        "banner_JKUNUY"
+      ],
+      "settings": {
+        "hero_color_scheme": ""
+      }
     }
   },
   "order": [
@@ -327,6 +365,7 @@
     "explore_VwPVRU",
     "featured_blog_ne43LD",
     "comment_7aBPUp",
-    "explore1_ekCD4Y"
+    "explore1_ekCD4Y",
+    "hero_EdNC9b"
   ]
 }

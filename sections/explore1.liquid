@@ -1,5 +1,5 @@
 <div class="explore-page">
-    <h3>Explore Our Categories</h3>
+    <h3 style="color: {{ section.settings.h3_color }};">{{ section.settings.h3_text }}</h3>
 
     <div class="explore-container">
         {% for block in section.blocks %}
@@ -27,7 +27,11 @@
         {% endfor %}
     </div>
 
-    <h5>Explore all categories</h5>
+    <h5 style="color: {{ section.settings.h5_color }};">
+        <a href="{{ section.settings.h5_link }}" style="color: inherit; text-decoration: none;">
+            {{ section.settings.h5_text }}
+        </a>
+    </h5>
 </div>
 
 <style>

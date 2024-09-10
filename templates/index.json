@@ -298,6 +298,40 @@
     },
     "explore3_NHigy9": {
       "type": "explore3",
+      "blocks": {
+        "explore_box_w4iQcQ": {
+          "type": "explore_box",
+          "settings": {
+            "h4_text": "BEST SELLERS",
+            "h4_text_color": "#000000",
+            "button_text": "Explore Now",
+            "button_text_color": "#000000"
+          }
+        },
+        "explore_box_Wz3cUa": {
+          "type": "explore_box",
+          "settings": {
+            "h4_text": "BEST SELLERS",
+            "h4_text_color": "#000000",
+            "button_text": "Explore Now",
+            "button_text_color": "#000000"
+          }
+        },
+        "explore_box_4ByWjV": {
+          "type": "explore_box",
+          "settings": {
+            "h4_text": "BEST SELLERS",
+            "h4_text_color": "#000000",
+            "button_text": "Explore Now",
+            "button_text_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "explore_box_w4iQcQ",
+        "explore_box_Wz3cUa",
+        "explore_box_4ByWjV"
+      ],
       "settings": {
       }
     }

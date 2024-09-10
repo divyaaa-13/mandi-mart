@@ -341,6 +341,7 @@
         "explore_box_Vf7qrc",
         "explore_box_fwNDDV"
       ],
+      "disabled": true,
       "settings": {
         "margin_top": 20,
         "margin_bottom": 20
@@ -384,6 +385,62 @@
       "settings": {
         "hero_color_scheme": ""
       }
+    },
+    "explore1_VQwzwC": {
+      "type": "explore1",
+      "blocks": {
+        "big_div_4CT6Pm": {
+          "type": "big-div",
+          "settings": {
+            "big_img": "shopify:\/\/shop_images\/image_20.png",
+            "big_img_width": 360,
+            "big_heading": "AMINO ACID",
+            "big_button_text": "Explore Now"
+          }
+        },
+        "small_div_UQ4wXc": {
+          "type": "small-div",
+          "settings": {
+            "small_img": "shopify:\/\/shop_images\/Untitleddesign-2023-11-23T142142.304_large_2x.progressive_1.png",
+            "small_img_width": 350,
+            "small_heading": "EFA'S OIL",
+            "small_button_text": "Explore Now"
+          }
+        },
+        "small_div_HyQMqX": {
+          "type": "small-div",
+          "settings": {
+            "small_img": "shopify:\/\/shop_images\/Untitleddesign_24_large_2x.progressive_1.png",
+            "small_img_width": 370,
+            "small_heading": "EFA'S OIL",
+            "small_button_text": "Explore Now"
+          }
+        },
+        "big_div_tzW6X6": {
+          "type": "big-div",
+          "settings": {
+            "big_img": "shopify:\/\/shop_images\/image_21.png",
+            "big_img_width": 360,
+            "big_heading": "AMINO ACID",
+            "big_button_text": "Explore Now"
+          }
+        }
+      },
+      "block_order": [
+        "big_div_4CT6Pm",
+        "small_div_UQ4wXc",
+        "small_div_HyQMqX",
+        "big_div_tzW6X6"
+      ],
+      "settings": {
+        "h3_text": "Explore Our Categories",
+        "h3_color": "#074542",
+        "h5_text": "Explore all categories",
+        "h5_color": "#074542",
+        "h5_link": "",
+        "margin_top": 20,
+        "margin_bottom": 20
+      }
     }
   },
   "order": [
@@ -397,6 +454,7 @@
     "explore_VwPVRU",
     "featured_blog_ne43LD",
     "explore3_F4WJXq",
-    "hero_emqwxd"
+    "hero_emqwxd",
+    "explore1_VQwzwC"
   ]
 }

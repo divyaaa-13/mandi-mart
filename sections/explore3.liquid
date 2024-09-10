@@ -1,14 +1,19 @@
 <div class="explore-now-div">
+    {% for block in section.blocks %}
     <div class="explore-box">
         <div class="explore-text-content">
-            <h4>BEST SELLERS</h4>
-            <button class="explore-now-btn">Explore Now</button>
+            <h4 style="color: {{ block.settings.h4_text_color }};">{{ block.settings.h4_text }}</h4>
+            <button class="explore-now-btn" style="color: {{ block.settings.button_text_color }};">{{ block.settings.button_text }}</button>
         </div>
         <div class="explore-now-img">
-            <img />
+            {% if block.settings.explore_img %}
+                <img src="{{ block.settings.explore_img | image_url }}" />
+            {% endif %}
         </div>
     </div>
+    {% endfor %}
 </div>
+
 
 <style>
     .explore-now-div{

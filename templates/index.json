@@ -318,7 +318,7 @@
             "button_text": "Explore Now",
             "button_text_color": "#000000",
             "explore_img": "shopify:\/\/shop_images\/60_Sale.png",
-            "explore_img_width": 160
+            "explore_img_width": 230
           }
         },
         "explore_box_4ByWjV": {
@@ -329,7 +329,7 @@
             "button_text": "Explore Now",
             "button_text_color": "#000000",
             "explore_img": "shopify:\/\/shop_images\/Untitleddesign_24_large_2x.progressive_1_1.png",
-            "explore_img_width": 150
+            "explore_img_width": 380
           }
         }
       },

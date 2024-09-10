@@ -12,8 +12,9 @@
     }
   {%- endstyle -%}
 
-<div class="explore-page-div section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }} custom-section">
-  <div class=" explore-page page-width color-{{ section.settings.color_scheme }}">
+
+
+<div class="explore-page" style=" margin-bottom: {{ section.settings.margin_bottom }}px;">
     <h3 style="color: {{ section.settings.h3_color }};">{{ section.settings.h3_text }}</h3>
 
     <div class="explore-container">
@@ -47,16 +48,9 @@
             {{ section.settings.h5_text }}
         </a>
     </h5>
-    </div>
 </div>
 
 <style>
-    .explore-page-div{
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: fit-content;
-    }
     .explore-page{
         width: 1203px;
         height: fit-content;
@@ -372,18 +366,6 @@
           "max": 100,
           "unit": "px"
         },
-        {
-        "type": "color_scheme",
-        "id": "section_color_scheme",
-        "label": "t:sections.all.colors.label",
-        "default": "scheme-1"
-      },
-      {
-        "type": "color_scheme",
-        "id": "color_scheme",
-        "label": "t:sections.multirow.settings.container_color_scheme.label",
-        "default": "scheme-1"
-      },
         {
         "type": "range",
         "id": "padding_top",

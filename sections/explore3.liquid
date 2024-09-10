@@ -17,6 +17,10 @@
             <div class="explore-text-content"></div>
                         <h4>{{ block.settings.explore_heading }}</h4>
                         <button class="explore-now-btn">{{ block.settings.explore_button_text }}</button>
+            </div>
+
+            <div class="explore-now-img" style="width: {{ block.settings.explore_img_width }}px;"></div>
+                        <img src="{{ block.settings.explore_img | image_url }}" alt="explore image text" />
                     </div>
         </div>
 

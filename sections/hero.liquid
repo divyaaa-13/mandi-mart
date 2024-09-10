@@ -366,7 +366,7 @@
 
 <script>
   const swiperId = "{{ section.id }}"
-  var swiper = new Swiper('.mySwiper', {
+  var swiper = new Swiper(`.mySwiper-${swiperId}`, {
   loop: true, 
   slidesPerView: 1,
   pagination: {

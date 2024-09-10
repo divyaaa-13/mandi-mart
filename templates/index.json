@@ -442,6 +442,18 @@
         "margin_top": 20,
         "margin_bottom": 20
       }
+    },
+    "comment_gwzJbN": {
+      "type": "comment",
+      "settings": {
+        "h3_text": "Lorem ipsum dolor sit",
+        "h3_text_color": "#074542",
+        "p_text": "Lorem ipsum dolor sit amet consectet",
+        "p_text_color": "#000000",
+        "img_upload": "shopify:\/\/shop_images\/Rectangle_6583.png",
+        "margin_top": 20,
+        "margin_bottom": 20
+      }
     }
   },
   "order": [
@@ -456,6 +468,7 @@
     "featured_blog_ne43LD",
     "explore3_F4WJXq",
     "hero_emqwxd",
-    "explore1_VQwzwC"
+    "explore1_VQwzwC",
+    "comment_gwzJbN"
   ]
 }

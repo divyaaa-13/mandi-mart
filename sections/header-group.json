@@ -37,11 +37,11 @@
     },
     "header": {
       "type": "header",
+      "disabled": true,
       "settings": {
-        "brand_logo": "shopify:\/\/shop_images\/image_15_1.png",
         "logo_width": 100,
-        "navigation": "main-menu-1",
-        "mega_navbar": "mega-menu-new",
+        "navigation": "",
+        "mega_navbar": "",
         "color_scheme": "scheme-93f7b37b-8f6a-4118-8237-7439f252f558",
         "menu_color_scheme": ""
       }

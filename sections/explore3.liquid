@@ -128,8 +128,11 @@
         }
 
         .explore-now-img{
-            height: 174px !important;
-            width: auto !important;
+            /* height: 174px !important;
+            width: auto !important; */
+            .explore-now-img:nth-child({{ forloop.index }}) {
+          width: {{ block.settings.explore_img_width_mobile }}px;
+        }
         }
 
     }

@@ -341,8 +341,9 @@
         "explore_box_Vf7qrc",
         "explore_box_fwNDDV"
       ],
-      "disabled": true,
       "settings": {
+        "section_color_scheme": "",
+        "color_scheme": "",
         "padding_top": 44,
         "padding_bottom": 68
       }
@@ -381,6 +382,7 @@
         "banner_mMcajX",
         "banner_hUMYC3"
       ],
+      "disabled": true,
       "settings": {
         "hero_color_scheme": ""
       }

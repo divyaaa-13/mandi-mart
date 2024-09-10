@@ -322,6 +322,43 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "explore1_9LCRgJ": {
+      "type": "explore1",
+      "blocks": {
+        "big_div_8gTrV4": {
+          "type": "big-div",
+          "settings": {
+            "big_img_width": 360,
+            "big_heading": "AMINO ACID",
+            "big_button_text": "Explore Now",
+            "big_div_button_link": ""
+          }
+        },
+        "small_div_gixeMa": {
+          "type": "small-div",
+          "settings": {
+            "small_img_width": 350,
+            "small_heading": "EFA'S OIL",
+            "small_button_text": "Explore Now"
+          }
+        }
+      },
+      "block_order": [
+        "big_div_8gTrV4",
+        "small_div_gixeMa"
+      ],
+      "settings": {
+        "h3_text": "Explore Our Categories",
+        "h3_color": "#074542",
+        "h5_text": "Explore all categories",
+        "h5_color": "#074542",
+        "h5_link": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "section_color_scheme": "",
+        "color_scheme": ""
+      }
     }
   },
   "order": [
@@ -334,6 +371,7 @@
     "brand_collection_G4Yttb",
     "explore_VwPVRU",
     "featured_blog_ne43LD",
-    "explore2_8N9C8D"
+    "explore2_8N9C8D",
+    "explore1_9LCRgJ"
   ]
 }

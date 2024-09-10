@@ -341,6 +341,7 @@
         "explore_box_Vf7qrc",
         "explore_box_fwNDDV"
       ],
+      "disabled": true,
       "settings": {
         "section_color_scheme": "",
         "color_scheme": "",
@@ -433,7 +434,6 @@
         "small_div_HyQMqX",
         "big_div_tzW6X6"
       ],
-      "disabled": true,
       "settings": {
         "h3_text": "Explore Our Categories",
         "h3_color": "#074542",

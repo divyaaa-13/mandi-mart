@@ -86,14 +86,53 @@
 </style>
 
 
-{%  schema  %} 
-{
-    "name": "explore3",
-    "settings": [],
-    "presets": [
+{% schema %}
+    {
+      "name": "Explore Section",
+      "settings": [],
+      "blocks": [
         {
-           "name": "explore3" 
+          "type": "explore_box",
+          "name": "Explore Box",
+          "settings": [
+            {
+              "type": "text",
+              "id": "h4_text",
+              "label": "Heading Text",
+              "default": "BEST SELLERS"
+            },
+            {
+              "type": "color",
+              "id": "h4_text_color",
+              "label": "Heading Text Color",
+              "default": "#000000"
+            },
+            {
+              "type": "text",
+              "id": "button_text",
+              "label": "Button Text",
+              "default": "Explore Now"
+            },
+            {
+              "type": "color",
+              "id": "button_text_color",
+              "label": "Button Text Color",
+              "default": "#000000"
+            },
+            {
+              "type": "image_picker",
+              "id": "explore_img",
+              "label": "Image"
+            }
+          ]
         }
-    ]
-}
- {% endschema %} 
+      ],
+      "presets": [
+        {
+          "name": "Explore Section",
+          "category": "Custom"
+        }
+      ]
+    }
+    {% endschema %}
+    

@@ -341,7 +341,6 @@
         "explore_box_Vf7qrc",
         "explore_box_fwNDDV"
       ],
-      "disabled": true,
       "settings": {
         "margin_top": 20,
         "margin_bottom": 20
@@ -381,6 +380,7 @@
         "banner_mMcajX",
         "banner_hUMYC3"
       ],
+      "disabled": true,
       "settings": {
         "hero_color_scheme": ""
       }

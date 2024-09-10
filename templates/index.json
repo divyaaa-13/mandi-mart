@@ -341,7 +341,6 @@
         "explore_box_Vf7qrc",
         "explore_box_fwNDDV"
       ],
-      "disabled": true,
       "settings": {
         "margin_top": 20,
         "margin_bottom": 20
@@ -432,6 +431,7 @@
         "small_div_HyQMqX",
         "big_div_tzW6X6"
       ],
+      "disabled": true,
       "settings": {
         "h3_text": "Explore Our Categories",
         "h3_color": "#074542",

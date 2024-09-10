@@ -19,7 +19,8 @@
 
         <div class="hero-content">
           <div class="hero-ratings">
-            <img src="{{ 'hero-ratings.png' | asset_url }}" alt="ratings" />
+            {% comment %} <img src="{{ 'hero-ratings.png' | asset_url }}" alt="ratings" /> {% endcomment %}
+            {%  render 'tick' %} 
           </div>
 
           {% if block.settings.hero_title_text != blank %}

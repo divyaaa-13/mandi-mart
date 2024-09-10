@@ -306,7 +306,8 @@
             "h4_text_color": "#000000",
             "button_text": "Explore Now",
             "button_text_color": "#000000",
-            "explore_img": "shopify:\/\/shop_images\/Mask_group_2.png"
+            "explore_img": "shopify:\/\/shop_images\/Mask_group_2.png",
+            "explore_img_width": 250
           }
         },
         "explore_box_Wz3cUa": {
@@ -316,7 +317,8 @@
             "h4_text_color": "#000000",
             "button_text": "Explore Now",
             "button_text_color": "#000000",
-            "explore_img": "shopify:\/\/shop_images\/60_Sale.png"
+            "explore_img": "shopify:\/\/shop_images\/60_Sale.png",
+            "explore_img_width": 250
           }
         },
         "explore_box_4ByWjV": {
@@ -326,7 +328,8 @@
             "h4_text_color": "#000000",
             "button_text": "Explore Now",
             "button_text_color": "#000000",
-            "explore_img": "shopify:\/\/shop_images\/Untitleddesign_24_large_2x.progressive_1_1.png"
+            "explore_img": "shopify:\/\/shop_images\/Untitleddesign_24_large_2x.progressive_1_1.png",
+            "explore_img_width": 190
           }
         }
       },

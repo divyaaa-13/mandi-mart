@@ -53,20 +53,13 @@
 <style>
     .explore-page{
         width: 1203px;
-        /* height: fit-content; */
+        height: fit-content;
         margin: auto;
         padding-left: 0;
         padding-right: 0;
-       
-    }
-    .page-width{
-        margin: 0;
-        padding: 0;
-        width: 100%;
         display: flex;
         flex-direction: column;
         gap: 25px;
-        height: fit-content;
     }
     .explore-page h3{
         margin: 0;
@@ -354,6 +347,24 @@
             "type": "url",
             "id": "h5_link",
             "label": "Heading 5 Link"
+        },
+        {
+          "type": "range",
+          "id": "margin_top",
+          "label": "Top Margin",
+          "default": 20,
+          "min": 0,
+          "max": 100,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "margin_bottom",
+          "label": "Bottom Margin",
+          "default": 20,
+          "min": 0,
+          "max": 100,
+          "unit": "px"
         },
         {
         "type": "color_scheme",
